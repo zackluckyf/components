@@ -19,10 +19,10 @@ describe('Component', function () {
     var ctrl = $componentController('listComponent', null, bindings);
     expect(ctrl.query).toEqual('a');
   });
-  it('should have a search function which gets an array', function () {
+  it('should only search if it has 3 or more characters', function () {
     var bindings = {};
     var ctrl = $componentController('listComponent', null, bindings);
-    ctrl.search('zack');
-    expect(ctrl.results).toEqual(jasmine.any(Array));
+    ctrl.search('ab');
+    expect(ctrl.results).toEqual([]);
   });
 });
