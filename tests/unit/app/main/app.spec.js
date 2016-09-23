@@ -1,7 +1,7 @@
-describe('MyApp', function () {
+describe('Myapp', function () {
   var $controller, scope, controller;
 
-  beforeEach(module('myApp'));
+  beforeEach(module('myapp'));
 
   beforeEach(inject(function (_$controller_, $rootScope) {
     // The injector unwraps the underscores (_) from around the parameter names when matching

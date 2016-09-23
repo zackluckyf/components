@@ -1,20 +1,19 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>First Angular</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
 
-  <script src="vendor/angular/angular.js"></script>
-  <script src="app.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>First Angular</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script src="vendor/angular/angular.js"></script>
+    <script src="main/app/app.js"></script>
+    <script src="main/component/component.js"></script>
 </head>
 
-<body ng-app="myApp">
-  <div ng-controller='MyController as mc'>
-    <div id="heading">
-      {{mc.name}}
-    </div>
-  </div>
-</div>
+<body ng-app="app">
+    <b>Message</b>
+    <list-component message="$ctrl.message"></list-component>
 </body>
+
 </html>
