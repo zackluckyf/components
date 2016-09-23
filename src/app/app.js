@@ -1,3 +1,6 @@
 (function () {
-  angular.module('app', ['app.searchFactory']);
+  angular.module('app', [])
+    .config(function (searchProvider) {
+      searchProvider.url('colors2.json');
+    });
 })();
