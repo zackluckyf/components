@@ -1,1 +1,6 @@
-<span>Name: {{$ctrl.message}}</span>
+<input type="text" value="" placeholder="Search Here!" ng-model="query"
+ng-model-options="{ debounce: $ctrl.time }" ng-change="$ctrl.search(query)"></input>
+
+<ul>
+    <li data-ng-repeat='result in $ctrl.results'>{{result}}</li>
+</ul>
